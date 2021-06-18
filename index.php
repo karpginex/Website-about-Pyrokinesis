@@ -29,10 +29,15 @@
             <div class="intro__inner">
             <h1 class="intro__title">Welcome to pyro</h1>
             <a class="button" href="#">Learn More</a>
+            <div class="time">
+                  <p>0:00:00:00</p>
+            </div>
 
             </div>
       </div>
 </div>
 
+<script type="text/javascript" src="source/scripts/main.js"></script>
+<script type="text/javascript" src="source/scripts/time.js"></script>
 </body>
 </html>
