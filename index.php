@@ -37,7 +37,8 @@
       </div>
 </div>
 
-<script type="text/javascript" src="source/scripts/main.js"></script>
 <script type="text/javascript" src="source/scripts/time.js"></script>
+<script type="text/javascript" src="source/scripts/main.js"></script>
+
 </body>
 </html>
