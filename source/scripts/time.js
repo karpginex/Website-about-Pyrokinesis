@@ -12,3 +12,11 @@ function timeBeforeConcert() {
     let seconds = pad(Math.round((difference / (1000))%60));
     return `${days}:${hours}:${minutes}:${seconds}`;
 }
+
+var weekDays =["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var now = new Date();
+
+function getCurrentDate() {
+    let date = new Date().toLocaleDateString();
+    return weekDays[now.getDay()] + " " + date;
+}

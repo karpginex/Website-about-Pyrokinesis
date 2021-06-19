@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <link href="source/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="source/css/style.css" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-      <title>Pyrokinesis</title>
+    <title> News </title>
 </head>
 <body>
 
@@ -13,8 +13,8 @@
       <div class="container">
             <div class="header__inner">
                   <div class="header__logo">
-                        <a class="header__link" href="/">KARPGINEX</a>
-                  </div>
+                      <a class="header__link" href="/">KARPGINEX</a>
+                    </div>
                   <nav class="nav">
                         <a class="nav__link" href="#">About</a>
                         <a class="nav__link" href="news.php">News</a>
@@ -28,14 +28,9 @@
 <div class="intro">
       <div class="container">
             <div class="intro__inner">
-            <h1 class="intro__title">Welcome to pyro</h1>
+            <h1 class="intro__title">NEWS</h1>
             <a class="button" href="#">Learn More</a>
-            <div class="current__date">
-                  <p>current_date</p>
-            </div>
-            <div class="time">
-                  <p>time</p>
-            </div>
+            
             
       </div>
 </div>
@@ -44,8 +39,5 @@
 <div id="underIntro">
       <p>Член</p>
 </div>
-<script type="text/javascript" src="source/scripts/time.js"></script>
-<script type="text/javascript" src="source/scripts/main.js"></script>
-
 </body>
 </html>
