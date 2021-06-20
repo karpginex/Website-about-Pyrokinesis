@@ -16,8 +16,8 @@
                       <a class="header__link" href="/">KARPGINEX</a>
                     </div>
                   <nav class="nav">
-                        <a class="nav__link" href="#">About</a>
                         <a class="nav__link" href="news.php">News</a>
+                        <a class="nav__link" href="#">About</a>
                         <a class="nav__link" href="#">Tour</a>
                         <a class="nav__link" href="#">Contact</a>
                   </nav>
