@@ -47,6 +47,11 @@ h1,h2,h3,h4,h5,h6,p{
     text-transform: uppercase;
     line-height: 1;
     color: #fff;
+    opacity: 0;
+}
+.intro__title.element__show{
+    opacity: 1;
+    transition: opacity 1.5s;
 }
 
 /* line under title */
@@ -206,6 +211,12 @@ h1,h2,h3,h4,h5,h6,p{
     max-width: 950px;
     margin: 0 auto 40px;
     text-align: center;
+    opacity: 0;
+}
+
+.section__header.element__show{
+    opacity: 1;
+    transition: opacity 1.3s;
 }
 
 .section__suptitle{
@@ -243,6 +254,12 @@ h1,h2,h3,h4,h5,h6,p{
 .about{
     display: flex;
     justify-content:space-between;
+    opacity: 0;
+}
+
+.about.element__show{
+    opacity: 1;
+    transition: opacity 3s;
 }
 
 .about__item{
