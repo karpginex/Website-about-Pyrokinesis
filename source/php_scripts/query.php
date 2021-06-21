@@ -9,18 +9,27 @@ function selectFrom($table, $id, array $columns) {
     // Формируем запрос
     // Это лучший способ выполнить SQL-запрос
     // Ещё примеры можно найти в документации mysql_real_escape_string()
-    $query = sprintf("SELECT * FROM %i
-        WHERE id=%s,
-        mysql_real_escape_string($table),
-        mysql_real_escape_string($id));
+    
+    $query;
+
+    if(!is_null($id)) {
+        $query = sprintf("SELECT * FROM %s
+        WHERE id = %s",
+        mysqli_real_escape_string($conn,$table),
+        mysqli_real_escape_string($conn,$id));
+    }
+    else {
+        $query = sprintf("SELECT * FROM %s",
+        mysqli_real_escape_string($conn,$table));
+    }
 
     // Выполняем запрос
-    $result = mysql_query($query);
+    $result = mysqli_query($conn, $query);
 
     // Проверяем результат
     // Это показывает реальный запрос, посланный к MySQL, а также ошибку. Удобно при отладке.
     if (!$result) {
-        $message  = 'Неверный запрос: ' . mysql_error() . "\n";
+        $message  = 'Неверный запрос: ' . mysqli_error($conn) . "\n";
         $message .= 'Запрос целиком: ' . $query;
         die($message);
     }
@@ -29,17 +38,26 @@ function selectFrom($table, $id, array $columns) {
     // Попытка напечатать $result не выведет информацию, которая в нем хранится
     // Необходимо использовать какую-либо mysql-функцию, работающую с результатом запроса
     // Смотрите также mysql_result(), mysql_fetch_array(), mysql_fetch_row() и т.п.
-    while ($row = mysql_fetch_assoc($result)) {
-        echo $row['firstname'];
-        echo $row['lastname'];
-        echo $row['address'];
-        echo $row['age'];
+
+    $array_result = array();
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $final_row = array();
+        
+        foreach($columns as $column)
+        {
+            $final_row[$column] = $row[$column];
+        }
+        
+        array_push($array_result, $final_row);
     }
+
 
     // Освобождаем ресурсы, ассоциированные с результатом
     // Это делается автоматически в конце скрипта
-    mysql_free_result($result);
+    mysqli_free_result($result);
     CloseCon($conn);
 
+    return $array_result;
 }
 ?>
