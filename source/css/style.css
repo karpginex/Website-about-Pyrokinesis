@@ -345,4 +345,46 @@ h1,h2,h3,h4,h5,h6,p{
     color:black;
 }
 
+/* Tour page */
 
+.section__tour{
+    padding: 80px 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/tour/background2.jpg) center
+    no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.tour__title{
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    color: #ffb039;
+}
+
+.table{
+    margin-top: 50px;
+    display: flex;
+    flex-direction:column;
+}
+
+.tables {
+    
+    text-align: left;
+}
+
+.tables td {
+    padding-left: 10em;
+}
+
+.tables__headings{
+    text-align: left;
+}
+
+.tables__headings th{
+    padding-left: 10em;
+}
