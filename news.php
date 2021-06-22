@@ -1,6 +1,5 @@
 <?php 
       include 'source/php_scripts/main.php';
-      include 'source/php_scripts/query.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,25 +34,25 @@
 
             <h1 class="intro__title__news">NEWS</h1>
       </div>
+      <!-- нужно генерировать новости в отдельном php и вызывать в цикле здесь-->
 
-      <div class="news__php">
 
-            <?php 
+      
+       
+      <!--echo '<div class="news__php">';    
+      echo '<div class="author__name">';
+      echo '</div>'
+      echo '</div>'-->
+
+      
+      
+
+            
+            
                   
-                  $array=selectFrom("news", NULL, array('id', 'author_id', 'text', 'date', 'image'));
-                  $array_authors=selectFrom("authors", $array[1]["id"], array('id', 'name', 'image_url'));
-
-                  $array_authors[0]["name"];
-                  $array_authors[0]["image_url"];
-
-            ?>
-            <div class="author__name">
-                  <?php echo $array_authors[0]["name"]; ?>
-            </div>
-            <div class="author__text">
-                  <img src="<?php echo $array_authors[0]["image_url"]; ?>" </img>
-            </div>
-      </div>
+            
+            
+      
             
       
 </div>
