@@ -35,9 +35,16 @@
             <h1 class="intro__title__news">NEWS</h1>
       </div>
       <!-- нужно генерировать новости в отдельном php и вызывать в цикле здесь-->
+      <div class="news">
+            
+            <?php
+                  printNews("0","2");
+
+            ?>
+
+      </div>
 
 
-      
        
       <!--echo '<div class="news__php">';    
       echo '<div class="author__name">';

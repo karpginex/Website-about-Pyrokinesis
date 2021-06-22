@@ -189,8 +189,28 @@ h1,h2,h3,h4,h5,h6,p{
     transition: color 0.5s linear;
 }
 
-.news__php{
+.new_news{
     text-align: center;
+    
+}
+
+.avatar_and_name{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.news__text {
+    font-size: 15px;
+}
+
+.news__date{
+    font-size: 10px;
+    font-weight: 600;
 }
 
 .author__name{
