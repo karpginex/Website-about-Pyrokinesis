@@ -457,3 +457,18 @@ h1,h2,h3,h4,h5,h6,p{
     text-transform: uppercase;
     font-weight: 600;
 }
+
+
+/* Admin Panel */
+
+.form_news{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    
+   text-align: center;
+}

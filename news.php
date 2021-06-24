@@ -20,9 +20,9 @@
                     </div>
                   <nav class="nav">
                         <a class="nav__link" href="news.php">News</a>
-                        <a class="nav__link" href="#">About</a>
-                        <a class="nav__link" href="#">Tour</a>
-                        <a class="nav__link" href="#">Contact</a>
+                        <a class="nav__link" href="../#about__link">About</a>
+                        <a class="nav__link" href="../#section__tour__link">Tour</a>
+                        <a class="nav__link" href="../#section__contact__link">Contact</a>
                   </nav>
             </div>
       </div>
