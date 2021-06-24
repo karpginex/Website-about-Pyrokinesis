@@ -45,6 +45,8 @@ function onEntry(entry) {
   }
 
 
+
+
 // Animation with click on href
 const anchors = document.querySelectorAll('a[href^="#"]')
 for(let anchor of anchors) {

@@ -385,14 +385,19 @@ h1,h2,h3,h4,h5,h6,p{
     -webkit-background-size:cover;
     background-size: cover;
     text-align: center;
+    opacity: 1;
 }
+
+
 
 
 .tour__title{
     text-transform: uppercase;
-    font-family: 'Caveat', cursive;
+    /*font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Caveat', cursive; 
     font-size: 50px;
     color: #ffb039;
+    font-weight: 300;
 }
 
 .table{
@@ -419,3 +424,36 @@ h1,h2,h3,h4,h5,h6,p{
     transform: translate3d(40%, 0%, 0);
 }
 
+.text__time{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.just__button__contact{
+    text-align: center;
+    margin-top: 370px;
+}
+
+
+/* Contact page */
+
+.section__contact{
+    padding: 60px 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/background__contact.jpg) center
+    no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+    text-align: center;
+    opacity: 1;
+}
+
+
+
+.contact__header{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

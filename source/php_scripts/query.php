@@ -60,4 +60,34 @@ function selectFrom($table, $id, array $columns) {
 
     return $array_result;
 }
+
+function insert($table, $author_id, $text) {
+
+    $conn = OpenCon();
+
+    // Формируем запрос
+    // Это лучший способ выполнить SQL-запрос
+    // Ещё примеры можно найти в документации mysql_real_escape_string()
+    
+  
+    
+    $query = sprintf("INSERT INTO %s (author_id, text)
+    VALUES (%s, '%s');",
+    mysqli_real_escape_string($conn,$table),
+    mysqli_real_escape_string($conn,$author_id),
+    mysqli_real_escape_string($conn,$text));
+    
+
+
+    // Выполняем запрос
+    if(mysqli_query($conn, $query)){
+        header("Location: ../../admin_panel.php");
+        die();
+    } else{
+        echo "ERROR: Could not able to execute $query. " . mysqli_error($conn);
+    }
+
+    CloseCon($conn);
+}
+
 ?>

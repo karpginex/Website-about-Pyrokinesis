@@ -6,6 +6,9 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
       <title>PYROKINESIS</title>
 </head>
@@ -20,8 +23,8 @@
                   <nav class="nav">
                         <a class="nav__link" href="news.php">News</a>
                         <a class="nav__link" href="#about__link">About</a>
-                        <a class="nav__link" href="#tour__header__link">Tour</a>
-                        <a class="nav__link" href="#">Contact</a>
+                        <a class="nav__link" href="#section__tour__link">Tour</a>
+                        <a class="nav__link" href="#section__contact__link">Contact</a>
                   </nav>
             </div>
       </div>
@@ -35,9 +38,7 @@
             <div class="current__date">
                   <p>current_date</p>
             </div>
-            <div class="time">
-                  <p>time</p>
-            </div>
+            
             
       </div>
 </div>
@@ -88,7 +89,7 @@
 
             </div>
             <div class="just__button">
-                  <a class="button__item" href="#tour__header__link">
+                  <a class="button__item" href="#section__tour__link">
                               tour
                   </a>
              </div>
@@ -98,32 +99,36 @@
 
 <div class="indent"></div>
 
-<section class="section__tour">
-      <div class="container">
-            <div class="tour__header" id="tour__header__link">
-                  <div class="tour__title">Pyrokinesis tour</div>
+<section class = "section__tour" id=section__tour__link>
+      <div class = "container">
+            <div class = "tour__header" id="tour__header__link">
+                  <div class = "tour__title">Pyrokinesis tour</div>
+                  <p class = text__time>Time before the start of the tour:</p>
+                  <div class = "time">
+                        <p>time</p>
+                   </div>
 
             </div>
 
             <div class="table">
                   <table>
                         <tbody>
-                              <tr class="tables__headings">
+                              <tr class = "tables__headings">
                                     <th>Июль</th>
                                     <th>Август</th>
                                     <th>Сентябрь</th>
                               </tr>
-                              <tr class="tables">
+                              <tr class = "tables">
                                     <td>25.07 Ижевск</td>
                                     <td>24.08 Москва</td>
                                     <td>27.09 Казань</td>
                               </tr>
-                              <tr class="tables">
+                              <tr class = "tables">
                                     <td>26.07 Пермь</td>
                                     <td>14.08 Санкт-Петербург</td>
                                     <td>23.09 Астана</td>
                               </tr>
-                              <tr class="tables">
+                              <tr class = "tables">
                                     <td>27.07 Казань</td>
                                     <td>15.08 Краснодар</td>
                                     <td>20.09 Красноярск</td>
@@ -132,10 +137,32 @@
                   </table>
 
             </div>
+            <div class="just__button__contact">
+                  <a class="button__item" href="#section__contact__link">
+                              contact us
+                  </a>
+             </div>
       </div>
       
 </section>
 
+<div class="indent">
+</div>
+
+<section class = "section__contact" id = section__contact__link>
+      <div class="container">
+            
+                  <div class="section__suptitle">
+                        <a class="header__link" href="#header">pyrokinesis</a>
+                  </div>
+                        <div class="contact__header">
+                              <h2 class="section__title">Contact</h2>
+                        </div>
+                        
+                  </div>
+
+      </div>
+</section> 
 
 
 
